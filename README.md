@@ -146,6 +146,8 @@ the the last part is when we use the PID control: Kp+Ki/s+Kd*s
 
 And we multiply the system feedback by 90 because as I mentioned earlier, the equilibrium point is at 90 degrees
 
+For the best control results, PID control is typically applied as follows. The proportional term typically dominates the control, and is adjusted to provide the fastest control possible without making the system unstable. However, using only the proportional term tends to leave steady state errors. Adding the integral term corrects this; steady state errors will lead to a growing integral term, which will eventually correct them. Finally, using only the proportional and integral terms tends to make the system slow to respond to sudden changes. Adding the derivative term can improve the response time, since this term responds to any sudden changes.
+
 [A YouTube reference](https://youtu.be/fv6dLTEvl74)
 
 
